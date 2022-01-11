@@ -23,6 +23,18 @@ const App = () => {
       }
     }
   }
+
+  const checkForColumnOfFour = () => {
+    for (let i = 0; i < 39; i++) {
+      const columnOfFour = [i, i + width, i + width * 3]
+      const decidedColor = currentColorArrangement[i]
+
+      if (columnOfFour.every(square => currentColorArrangement[square] === decidedColor)) {
+        columnOfFour.forEach(square => currentColorArrangement[square] = '')
+      }
+    }
+  }
+
   const createBoard = () => {
     const randomColorArrangement = []
     for (let i = 0; i < width * width; i++) {
@@ -43,7 +55,7 @@ const App = () => {
     }, 100)
     return () => clearInterval(timer)
 
-  }, [checkForColumnOfThree, currentColorArrangement])
+  }, [checkForColumnOfThree, currentColorArrangement, checkForColumnOfFour])
 
   return (
     <div className="app">
