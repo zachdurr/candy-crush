@@ -14,3 +14,9 @@
   width: 70px;
   height: 70px;
 }
+
+.score-board {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(112, 112, 177);
+  
+}
