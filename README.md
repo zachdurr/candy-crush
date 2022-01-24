@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a react version of the app 'Candy Crush'. This project was made to help me continue my React learning as well as brush up on some HTML/CSS as well. Move the candies (they can only move one square up/left/right/down) and if they make a group of three or more in a row those candies will disappear, you will get the same number of points as candies in a row you have made and the game continues! Please enjoy playing!
 
 ## Available Scripts
 
